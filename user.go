@@ -117,7 +117,7 @@ func (cli *Client) ResolveContactQRLink(code string) (*types.ContactQRLinkTarget
 
 // GetContactQRLink gets your own contact share QR link that can be resolved using ResolveContactQRLink
 // (or scanned with the official apps when encoded as a QR code).
-//
+// test
 // If the revoke parameter is set to true, it will ask the server to revoke the previous link and generate a new one.
 func (cli *Client) GetContactQRLink(revoke bool) (string, error) {
 	action := "get"
